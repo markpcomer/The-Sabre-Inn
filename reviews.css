@@ -1,0 +1,268 @@
+* {
+	color: white;
+	/* border: 1px white solid; */
+}
+
+body{
+	font-family: 'Vidaloka', serif;
+	background-color: black;
+	background-image: url("brick2.jpeg"); 
+	background-position: center top;
+	background-attachment: fixed; 
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin:0;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	margin: 0 0%;
+}
+
+h2{
+	font-size: 3.5em;
+	backdrop-filter: blur(1px);
+	background-color: rgba(140, 137, 138, 0.17);
+	border-radius: 1%;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+button{
+	display: inline-block;
+	border: 0px black solid;
+	
+
+}
+
+a{
+	font-size: 1.3em;
+	list-style-type: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.review-container{
+	text-align: center; 
+	padding:0 15% 0 15%;
+}
+
+.reviews{
+	height: 60vh;
+	backdrop-filter: blur(2px);
+	background-color: rgba(140, 137, 138, 0.17);
+  	overflow: hidden;
+  	position: relative;
+  	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  	border-radius: 1%;
+}
+
+.reviews > div {
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  animation: slide 25s infinite;
+  opacity: 0;
+  padding: 5% 15% 15% 20%;
+ }
+
+.reviews > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.reviews > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.reviews > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.reviews > div:nth-child(5) {
+  animation-delay: 20s;
+}
+
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.03);
+  }
+}
+
+
+
+.quotes{
+	font-size: 2em;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	background-color: black;
+
+}
+
+.header{
+	font-size: 1.5em;
+	order: 1;
+	background-color: black;
+	opacity: .9;
+}
+
+.navbar{
+	order: 2;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: black;
+	padding-bottom: 1%;	
+	margin: 1% 0;
+}
+
+.subnav{
+	background-color: black;
+	position: relative;
+	display: inline-block;
+
+}
+
+.subnavbtn{
+	font-family: 'Vidaloka', serif;
+	font-size: 1.35em;
+	background-color: #000000;
+	z-index: 1;
+	transition: opacity 250ms ease-in-out;
+	position: relative;
+}
+
+.subnavbtn:active{
+
+}
+
+.subnavbtn:hover{
+	cursor: pointer;
+	transition: 1s;
+}
+
+.subnavbtn:visited{
+	color: #855050;
+}
+
+.subnav-content{
+	text-align: center;
+	display: none;
+	position: absolute;
+	transition: 3.5s;
+	z-index: 1;
+	bottom: 1.7rem;
+
+	/* centering trick */
+	right: 50%;
+	transform: translateX(50%)
+	/*margin-left: -70px;
+	width: 150%; */
+}
+
+/*.subnav-content-menus{
+	width: 215%;
+	margin-left: -82px;
+}*/
+
+.top-option{
+	border-radius: 3% 3% 0 0;
+}
+
+.bottom-option{
+	padding-bottom: 5%;
+}
+
+
+.subnav-content a {
+	display: block;
+	z-index: -1;
+	transition: .75s;
+	background-color: black;
+
+
+	/* use nowrap to keep text on the same line */
+	white-space: nowrap; /* width: 150%; */
+	
+	/* using % padding for y direction makes them all different sizes */
+	/* change back to 20% and see what happens */
+	padding: 1.5rem 1rem; /* 20% 0 */
+	
+}
+
+/* Not needed anymore - centering doesn't do anything, z index is already above*/
+/*.subnav-content a:hover{
+	z-index: -1;
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+} */
+
+.subnav:hover .subnav-content{
+	display: block;
+	transition: all 2s;
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.subnav:hover .subnavbtn {
+	transition: .5s;
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.social-media{
+	order: 3;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: black;
+	width: 18%;
+
+}
+
+.social-icons{
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 15%;
+	filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
