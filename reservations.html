@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="reservations2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+
+	<title>Reservations</title>
+</head>
+
+
+
+
+
+<body>
+	<div class="title">
+		<h2>Book a Reservation</h2>
+	</div>
+	<div class="reservation_form">
+		<div class="last resInfo">
+			<label for="lname">last name</label><br>
+			<input type="text" name="fname"><br>
+		</div>
+		<div class="first resInfo"> 
+			<label for="fname">first name</label><br>
+			<input type="text" name="lname"><br>
+		</div>
+		<div class="email resInfo"> 
+			<label for="email">email</label><br>
+			<input type="email" name="email"><br>
+		</div>
+		<div class="phone resInfo"> 
+			<label for="phone">phone number</label><br>
+			<input type="text" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+		</div>
+		<div class="date_time resInfo"> 
+			<label>date & time</label><br>
+			<input type="datetime-local" name="reservation-time" ><br>
+		</div>
+		<div class="guestCount resInfo"> 
+			<label for="guest-count">guest count</label><br>
+				<select name="guest-count"><br>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="more">more than 20</option>
+				</select>
+		</div>
+		<div class="setup resInfo"> 
+			<input type="radio" name="space">
+				<label for="setup">indoor</label>
+				<input type="radio" name="space">
+				<label for="setup">outdoor</label>
+		</div>
+		<div class="requests resInfo"> 
+			<label for="special-requests">special requests</label><br>
+			<textarea name="special-requests" rows="5" cols="25">Enter any special requests here.</textarea><br>
+		</div>
+		<div class="submit resInfo"> 
+			<input type="submit" value="Submit">
+		</div>
+		<div class="reset resInfo"> </div>
+	</div>
+
+<!--
+	<div class="bigboi">
+		<div class="forms">
+			<div class="reservations">
+				<h2 class="form-titles">Book a Reservation</h2>
+				<form>
+
+				<div class="reservation-form">
+					<div class="reserve-1">
+						<label for="lname">last name</label><br>
+						<input type="text" name="fname"><br>
+						<label for="email">email</label><br>
+						<input type="email" name="email"><br>
+						<label>date & time</label><br>
+						<input type="datetime-local" name="reservation-time" ><br>
+					</div>
+					<div class="reserve-2">
+						<label for="fname">first name</label><br>
+						<input type="text" name="lname"><br>
+						<label for="phone">phone number</label><br>
+						<input type="text" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+						<label for="guest-count">guest count</label><br>
+						<select name="guest-count"><br>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+
+					</div>
+
+						
+					<div class="reserve-3">
+						<label for="special-requests">special requests</label><br>
+						
+						<textarea name="special-requests" rows="5" cols="25">Enter any special requests here.</textarea><br>
+						
+					</div>
+					<div class="submit">
+						<input type="submit" value="Submit">
+					</div>
+
+					
+				</form>
+				</div>
+				
+				
+			</div>
+		
+			<div class="private-parties">
+				<h2 class="form-titles">Book a Private Party</h2>
+				<form>
+					<div class="private-form">
+						<div class="private-1">
+							<label for="lname">last name</label><br>
+							<input type="text" name="fname"><br>
+							<label for="email">email</label><br>
+							<input type="email" name="email"><br>
+							</div>
+							<div class="private-2">
+							<label for="fname">first name</label><br>
+							<input type="text" name="lname"><br>
+							<label for="phone">phone number</label><br>
+							<input type="text" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+							</div>
+						<div class="private-3">
+							<label for="guest-count">guest count</label><br>
+							<select name="guest-count"><br>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="more">more than 20</option>
+							</select>
+							<p>reservation setup</p>
+							<input type="radio" name="space">
+							<label for="setup">indoor</label>
+							<input type="radio" name="space">
+							<label for="setup">outdoor</label>
+						
+						</div>
+						<div class="private-4">
+							<label for="special-requests">special requests</label><br>
+							<textarea name="special-requests" rows="10" cols="50">Enter any special requests here.</textarea><br>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+-->
+
+	<div class="container">
+		<div class="header">
+			<a href="index2.html" class="home"><h1>The Sabre Inn</h1></a>
+		</div>
+
+		<div class="navbar">
+			<div class="subnav">
+				<button class="subnavbtn">menus</button>
+				<div class="subnav-content subnav-content-menus">
+					<a class="top-option" href="https://static1.squarespace.com/static/53397fc1e4b0fac946ae9b22/t/624cb817a305734a87bfae5b/1649195031864/CVS+Food+Menu++4_5_2022.pdf">dinner</a>
+					<a href="champagne.html">the champagne experience</a>
+					<a class="bottom-option" href="https://static1.squarespace.com/static/53397fc1e4b0fac946ae9b22/t/624c8e2ee13e9372107523e2/1649184305054/BTG+4_4_2022.pdf">wine list</a>
+				</div>
+			</div>
+			<div class="subnav">
+				<button class="subnavbtn">specials</button>
+				<div class="subnav-content">
+					<a class="top-option" href="#"></a>
+					<a href="#"></a>
+					<a class="bottom-option" href="#"></a>
+				</div>
+			</div>
+			<div class="subnav">
+				<button class="subnavbtn">reservations</button>
+				<div class="subnav-content">
+					<a class="top-option" href="#">dinner reservations</a>
+					<a class="bottom-option" href="#">private parties</a>
+				</div>
+			</div>
+			 <div class="subnav">
+				<button class="subnavbtn">about us</button>
+				<div class="subnav-content">
+					<a class="top-option" href="#">who we are</a>
+					<a href="#">contact us</a>
+					<a class="bottom-option" href="#">location & address</a>
+				</div>
+			</div>
+			<div class="subnav">
+				<button class="subnavbtn">reviews</button>
+				<div class="subnav-content">
+					<a class="top-option" href="#"></a>
+					<a href="#"></a>
+					<a class="bottom-option" href="#"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="social-media">
+			<a href="https://www.instagram.com/sabrechampagneandwine/"><img class="social-icons" src="instagram2.jpg"></a>
+			<a href="https://www.facebook.com/The-Riddler-NYC-108641453835471"><img class="social-icons" src="facebook3.jpg"></a>
+			<a href="#"><img class="social-icons" src="twitter2.jpg"></a>
+		</div>
+		
+
+	</div>
+
+</body>
+</html>
